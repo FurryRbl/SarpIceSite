@@ -1,7 +1,12 @@
+/* Fonts */
 @import url('../fonts/Fasthand/Fasthand.css');
 
+/* Layout */
+@import url('Layout/NavigationBar.css');
+@import url('Layout/Introduce.css');
+
 body {
-    background-image: url('../images/background.jpg');
+    background-image: url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(15px);
@@ -14,47 +19,7 @@ button {
 
 #container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-#NavigationBar {
-    display: flex;
     align-items: center;
-    width: 50rem;
-    height: 3rem;
-    border-radius: 5px;
-    border: 1px rgba(255,255,255,0.2) solid;
-}
-
-#NavigationBar #left {
-    display: flex;
-    height: 3rem;
-    align-items: center;
-}
-
-#NavigationBar #left p {
-    color: white;
-    font-size: 100%;
-    border: 1px white solid;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    margin-left: 10px;
-    font-family: Fasthand;
-    font-weight: lighter;
-}
-
-#NavigationBar #right {
-    display: flex;
-    height: 3rem;
-    margin: 0 auto;
-    align-items: center;
-    margin-right: 10px;
-}
-
-#NavigationBar button {
-    height: 100%;
-    width: 4.5rem;
-    text-align: center;
-    color: white;
 }

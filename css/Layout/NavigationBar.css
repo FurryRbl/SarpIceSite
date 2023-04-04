@@ -1,0 +1,44 @@
+#NavigationBar {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+#NavigationBar #left {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+
+#NavigationBar #right {
+    display: flex;
+    height: 3rem;
+    margin: 0 10px 0 auto;
+    align-items: center;
+}
+
+#NavigationBar p {
+    color: white;
+    font-size: 100%;
+    border-bottom: 1px solid white;
+    margin-left: 10px;
+    font-family: Fasthand;
+    font-weight: lighter;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+#NavigationBar button {
+    height: 100%;
+    width: 4.5rem;
+    text-align: center;
+    color: white;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
