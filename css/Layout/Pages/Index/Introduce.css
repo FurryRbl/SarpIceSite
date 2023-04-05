@@ -1,0 +1,42 @@
+/* animation */
+@import url('../../../animation.css');
+
+#Introduce {
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    width: 50rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+#Introduce #left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#Introduce #left img {
+    border-radius: 50%;
+    animation: HalfRotation 5s linear infinite;
+}
+
+#Introduce #right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Introduce #right p {
+    text-align: center;
+    font-weight: bold;
+        font-family: ZCOOLKuaiLe;
+    color: grey;
+}

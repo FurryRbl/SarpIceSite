@@ -1,12 +1,10 @@
-#NavigationBar {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    width: 60rem;
-    height: 3rem;
-    border-radius: 5px;
-    border: 1px rgba(255, 255, 255, 0.2) solid;
-}
+/* Template */
+@import url('../../Template/NavigationBar.css');
+
+/* Fonts */
+@import url('../../../../../fonts/Fasthand/Fasthand.css');
+@import url('../../../../../fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css');
+
 
 #NavigationBar #left {
     display: flex;
@@ -28,16 +26,6 @@
     margin-left: 10px;
     font-family: Fasthand;
     font-weight: lighter;
-    user-select: none;
-    -moz-user-select: -moz-none;
-    -webkit-user-select: none;
-}
-
-#NavigationBar button {
-    height: 100%;
-    width: 4.5rem;
-    text-align: center;
-    color: white;
     user-select: none;
     -moz-user-select: -moz-none;
     -webkit-user-select: none;

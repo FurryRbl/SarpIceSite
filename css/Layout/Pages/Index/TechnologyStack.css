@@ -1,7 +1,10 @@
-#Introduce {
-    height: 20rem;
+TechnologyStack {
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
     width: 50rem;
     margin-top: 10px;
     border-radius: 5px;
+    align-items: center;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
