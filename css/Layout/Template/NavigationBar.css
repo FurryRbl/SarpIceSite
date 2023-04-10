@@ -1,5 +1,5 @@
 #NavigationBar {
-    margin: 0 auto;
+    margin: 5px auto;
     display: flex;
     align-items: center;
     width: 70rem;
@@ -8,17 +8,21 @@
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
-#NavigationBar button {
+#NavigationBar a {
+    display: flex;
     height: 100%;
     width: 4.5rem;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     color: white;
     user-select: none;
+    text-decoration: none;
+    font-size: 14px;
     -moz-user-select: -moz-none;
     -webkit-user-select: none;
 }
 
-#NavigationBar button:hover {
+#NavigationBar a:hover {
     height: 80%;
     width: 4.5rem;
     border-radius: 10px;

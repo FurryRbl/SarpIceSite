@@ -3,11 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(15px);
-}
-
-button {
-    border-style: none;
-    background-color: transparent;
+    margin: 0 auto;
 }
 
 #container {
@@ -15,4 +11,8 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+img {
+    user-select: none;
 }

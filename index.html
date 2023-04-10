@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="zh">
-    <head>
-        <title>SharpIce 个人站点</title>
-        <link rel="icon" href="favicon.ico"/>
-        <meta name="description" content="SharpIce 的个人站点"/>
-        <meta name="keywords" type="image/x-icon" content="SharpIce,锐冰龙,Furry"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="js/script.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/AddMark.css"/>
-        <link rel="stylesheet" type="text/css" href="css/global.css"/>
-        <link rel="stylesheet" type="text/css" href="css/Layout/Pages/Index/main.css"/>
-    </head>
-    <body>
-        <div id="container">
-            <div id="NavigationBar">
-                <div id="left">
-                    <p>SharpIce Site</p>
-                    <p style="border: revert; font: revert">一行Bug两行泪</p>
-                    <vl></vl>
-                    <button onclick="SharpIce.Jump.Anchor('#');">首页</button>
-                    <button onclick="SharpIce.Jump.Anchor('#Introduce');">介绍</button>
-                    <button onclick="SharpIce.Jump.Anchor('#TechnologyStack');">技术栈</button>
-                    <button>联系</button>
-                    <vl></vl>
-                    <button>友链</button>
-                    <button>许可</button>
-                </div>
-                <div id="right">
-                    <vl></vl>
-                    <button>主站</button>
-                    <button>名片</button>
-                </div>
+
+<head>
+    <title>SharpIce 个人站点</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="SharpIce 的个人站点" />
+    <meta name="keywords" type="image/x-icon" content="SharpIce,锐冰龙,Furry" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/AddMark.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="css/Layout/Pages/Index/main.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="NavigationBar">
+            <div id="left">
+                <p>SharpIce Site</p>
+                <p style="border: revert; font: revert">一行Bug两行泪</p>
+                <vl></vl>
+                <a href="#">首页</a>
+                <a href="#Introduce">介绍</a>
+                <a href="#TechnologyStack">技术栈</a>
+                <a href="#Connect">联系</a>
+                <vl></vl>
+                <a href="#">友链</a>
+                <a href="#">许可</a>
             </div>
-            <div id="Introduce">
-                <div id="left">
-                    <img title="Logo" src="favicon.ico" width="128" height="128">
-                </div>
-                <vl style="margin: revert;"></vl>
-                <div id="right">
-                    <p>
-                        自2022年开始高强度学习计算机
-                        <br>
-                        自2022年底进入Furry圈，设定是鱼+龙的海鲜龙
-                    </p>
-                </div>
-            </div>
-            <div id="TechnologyStack">
-                
+            <div id="right">
+                <vl></vl>
+                <a href="#">主站</a>
+                <a href="#">名片</a>
             </div>
         </div>
-    </body>
+        <div id="Introduce">
+            <div id="left">
+                <img title="Logo" src="favicon.ico" width="128" height="128">
+            </div>
+            <vl style="margin: revert;"></vl>
+            <div id="right">
+                <p>
+                    自2022年开始高强度学习计算机
+                    <br>
+                    自2022年底进入Furry圈，设定是鱼+龙的海鲜龙
+                    <br>
+                    是 Minecraft 和音游玩家
+                    <br>
+                    希望多交一些朋友~
+                </p>
+            </div>
+        </div>
+        <div id="TechnologyStack">
+            <a href="https://csharp.net">
+                <img title="CSharp Logo" src="images/Icon/CSharp.png">
+                <p style="color: black;">C#</p>
+            </a>
+        </div>
+        <div id="Connect">
+            <a href="https://space.bilibili.com/513364639">
+                <i class="icon-bilibili"></i>
+                <p style="color: rgb(0, 160, 255);">BiliBili</p>
+            </a>
+            <a href="https://github.com/FurryRbl">
+                <i class="icon-github"></i>
+                <p style="color: black;">GitHub</p>
+            </a>
+            <a href="https://osu.ppy.sh/users/33387074">
+                <img title="osu! Logo" src="images/Icon/osu.png">
+                <p style="color: hotpink;">osu!</p>
+            </a>
+        </div>
+    </div>
+</body>
+
 </html>

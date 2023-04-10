@@ -1,3 +1,4 @@
 *.ttf filter=lzma2
 *.ico filter=lzma2
 *.jpg filter=lzma2
+*.png filter=lzma2

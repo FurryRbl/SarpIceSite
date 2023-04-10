@@ -1,27 +1,29 @@
-#TechnologyStack {
+#Connect {
     display: flex;
-    flex-flow: wrap;
-    height: 16rem;
+    flex-direction: row;
+    height: 7rem;
     width: 70rem;
     margin-top: 10px;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
-#TechnologyStack a {
+#Connect a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    height: 7rem;
+    height: 6rem;
     margin: auto 1rem auto 1rem;
 }
 
-#TechnologyStack img{
+#Connect i, #Connect img{
     height: 70%;
     margin: 0 auto;
 }
 
-#TechnologyStack p {
+#Connect p {
     font-size: 1.3rem;
     user-select: none;
     margin: 5px auto;
