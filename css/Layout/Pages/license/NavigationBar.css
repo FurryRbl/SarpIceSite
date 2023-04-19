@@ -1,0 +1,15 @@
+/* Template */
+@import url('../../Template/NavigationBar.css');
+
+#NavigationBar .Left {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+
+#NavigationBar .Right {
+    display: flex;
+    height: 3rem;
+    margin: 0 10px 0 auto;
+    align-items: center;
+}

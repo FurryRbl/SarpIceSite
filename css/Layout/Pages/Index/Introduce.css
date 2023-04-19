@@ -1,18 +1,21 @@
 /* animation */
 @import url('../../../animation.css');
 
+/* Fonts */
+@import url('../../../../../fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css');
+
 #Introduce {
     display: flex;
     flex-direction: row;
     height: 30rem;
     width: 50rem;
-    margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 1rem;
     align-items: center;
+    margin: 0.5rem auto;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
-#Introduce #left {
+#Introduce .Left {
     display: flex;
     width: 50%;
     height: 100%;
@@ -20,12 +23,12 @@
     justify-content: center;
 }
 
-#Introduce #left img {
+#Introduce .Left img {
     border-radius: 50%;
     animation: HalfRotation 5s linear infinite;
 }
 
-#Introduce #right {
+#Introduce .Right {
     display: flex;
     width: 50%;
     height: 100%;
@@ -34,7 +37,7 @@
     justify-content: center;
 }
 
-#Introduce #right p {
+#Introduce .Right p {
     text-align: center;
     font-weight: bold;
     font-family: ZCOOLKuaiLe;

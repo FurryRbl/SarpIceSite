@@ -3,28 +3,36 @@
 
 /* Fonts */
 @import url('../../../../../fonts/Fasthand/Fasthand.css');
-@import url('../../../../../fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css');
 
-
-#NavigationBar #left {
+#NavigationBar .Left {
     display: flex;
     height: 3rem;
     align-items: center;
 }
 
-#NavigationBar #right {
+#NavigationBar .Right {
     display: flex;
     height: 3rem;
     margin: 0 10px 0 auto;
     align-items: center;
 }
 
-#NavigationBar p {
+#NavigationBar .Title {
     color: white;
     font-size: 100%;
     border-bottom: 1px solid white;
     margin-left: 10px;
     font-family: Fasthand;
+    font-weight: lighter;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+#NavigationBar .Subheading {
+    color: white;
+    font-size: 100%;
+    margin-left: 10px;
     font-weight: lighter;
     user-select: none;
     -moz-user-select: -moz-none;

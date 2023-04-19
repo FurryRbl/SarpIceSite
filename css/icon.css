@@ -23,3 +23,102 @@
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
 }
+
+.icon-python {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/Python.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-VisualStudio {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/VisualStudio.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-VisualStudioCode {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/VisualStudioCode.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-IntelliJIDEA {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/IntelliJIDEA.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-CSharp {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/CSharp.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-Vim {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/Vim.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-NeoVim {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/NeoVim.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-Java {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/Java.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-Blender {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/Blender.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-Lua {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/Lua.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-osu {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Icon/osu.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

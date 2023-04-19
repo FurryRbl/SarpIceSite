@@ -1,10 +1,10 @@
 #NavigationBar {
-    margin: 5px auto;
+    margin: 0.5rem auto;
     display: flex;
     align-items: center;
     width: 70rem;
     height: 3rem;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
@@ -15,9 +15,9 @@
     align-items: center;
     justify-content: center;
     color: white;
-    user-select: none;
     text-decoration: none;
     font-size: 14px;
+    user-select: none;
     -moz-user-select: -moz-none;
     -webkit-user-select: none;
 }
@@ -27,4 +27,15 @@
     width: 4.5rem;
     border-radius: 10px;
     background-color: rgba(0, 255, 255, 0.1);
+}
+
+#NavigationBar .TitleMain {
+    margin: 0 auto;
+    color: white;
+}
+
+p {
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
 }
