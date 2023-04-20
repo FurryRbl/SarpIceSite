@@ -8,7 +8,7 @@
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
-#NavigationBar a {
+#NavigationBar a, button {
     display: flex;
     height: 100%;
     width: 4.5rem;
@@ -17,12 +17,9 @@
     color: white;
     text-decoration: none;
     font-size: 14px;
-    user-select: none;
-    -moz-user-select: -moz-none;
-    -webkit-user-select: none;
 }
 
-#NavigationBar a:hover {
+#NavigationBar a:hover, #NavigationBar button:hover {
     height: 80%;
     width: 4.5rem;
     border-radius: 10px;

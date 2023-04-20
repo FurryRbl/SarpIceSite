@@ -13,6 +13,13 @@ body {
     align-items: center;
 }
 
-img {
+img, button, a {
     user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+button {
+    background-color: transparent;
+    border-style: none;
 }
