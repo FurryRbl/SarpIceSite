@@ -2,7 +2,7 @@
 @import url('../../Template/NavigationBar.css');
 
 /* Fonts */
-@import url('../../../../../fonts/Fasthand/Fasthand.css');
+@import url('../../../../fonts/Fasthand/Fasthand.css');
 
 #NavigationBar .Left {
     display: flex;

@@ -1,8 +1,5 @@
-/* animation */
-@import url('../../../animation.css');
-
 /* Fonts */
-@import url('../../../../../fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css');
+@import url('../../../../fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css');
 
 #Introduce {
     display: flex;

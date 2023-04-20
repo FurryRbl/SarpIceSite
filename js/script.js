@@ -2,15 +2,15 @@ console.log("欢迎访问 SharpIce 的个人站点👋");
 
 var SharpIce = {
     Pages: {
-        PartiallyLoadingPages: function (PagesLocation, Content) {
+        PartiallyLoadingPages: function (Pages) {
             $.ajax({
-                url: PagesLocation,
+                url: '/pages/' + Pages + '.html',
                 type: 'get',
                 success: function (res) {
-                    $(Content).html($(res));
+                    $('body').html($(res));
                 }
             });
-            window.history.pushState(null, null, PagesLocation);
+            window.history.pushState(null, null, '/');
         }
     }
 }
