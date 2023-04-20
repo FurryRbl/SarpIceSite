@@ -3,9 +3,19 @@
     <head>
         <title>SharpIce 个人站点</title>
         <link rel="icon" href="/favicon.ico"/>
+        <link rel="shortcut icon" href="/favicon.ico"/>
+        <link rel="msapplication-TileImage" href="/favicon.ico"/>
+        <link rel="apple-touch-icon-precomposed" href="/favicon.ico"/>
+        <meta name="application-name" content="SharpIce 个人站点" />
+        <meta name="msapplication-tooltip" content="SharpIce 个人站点" />
         <meta name="description" content="SharpIce 的个人站点"/>
         <meta name="keywords" type="image/x-icon" content="SharpIce,锐冰龙,Furry"/>
+        <meta name="author" content="SharpIce">
+        <meta name="copyright" content="SharpIce©MIT">
+        <meta name="generator" content="VSCode">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preload" href="/pages/loading.html" as="style">
+        <link rel="dns-prefetch" href="https://cdn.staticfile.org/">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
@@ -32,7 +42,7 @@
                 <p class="TitleMain">主站</p>
                 <div class="Right">
                     <vl></vl>
-                    <a href="/">主站</a>
+                    <a href="/" onclick="SharpIce.Pages.PartiallyLoadingPages('/', 'body'); return false;">主站</a>
                     <a href="#">名片</a>
                     <a href="pages/license.html" onclick="SharpIce.Pages.PartiallyLoadingPages('/pages/license.html', 'body'); return false;">许可</a>
                 </div>
@@ -44,7 +54,7 @@
                 <vl style="margin: revert"></vl>
                 <div class="Right">
                     <p>
-                        自2022年开始高强度学习计算机
+                        自2020年开始高强度学习计算机
                         <br/>
                         自2022年底进入Furry圈，设定是鱼+龙的海鲜龙
                         <br/>
@@ -118,12 +128,20 @@
             <div id="FriendshipLinks">
                 <h1>友链</h1>
                 <a href="https://www.dfql.io/">
-                    <img src="images/FriendshipLinks/dfql.ico" alt="潜鳞博客">
-                    <p>潜鳞博客</p>
+                    <img src="images/FriendshipLinks/dfql.ico" alt="潜鳞">
+                    <p>潜鳞</p>
                 </a>
                 <a href="https://blog.chiron1937.tk/">
-                    <img src="images/FriendshipLinks/chiron1937.ico" alt="〖天蓝〗の小窝">
-                    <p style="color: aqua">〖天蓝〗の小窝</p>
+                    <img src="images/FriendshipLinks/chiron1937.ico" alt="天蓝">
+                    <p style="color: aqua">天蓝</p>
+                </a>
+                <a href="https://koto.cc/">
+                    <img src="images/FriendshipLinks/koto.png" alt="koto">
+                    <p>koto</p>
+                </a>
+                <a href="https://xixi.blog/">
+                    <img src="images/FriendshipLinks/xixi.png" alt="西西">
+                    <p>西西</p>
                 </a>
             </div>
         </div>
