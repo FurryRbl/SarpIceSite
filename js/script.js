@@ -1,29 +1,18 @@
 console.log("欢迎访问 SharpIce 的个人站点👋");
 
-window.onerror = function (message, source, lineno, colno, error) {
-    if (error != null) {
-        SharpIce.DiaLog.Error('消息：' + message +
-            '</br></br>位置：' + source +
-            '</br></br>行：' + lineno +
-            '</br></br>列：' + colno +
-            '</br></br>错误：' + error);
-    }
-}
-
 var SharpIce = {
     Pages: {
         PartiallyLoadingPagesContainer: function (Pages) {
-            SharpIce.Pages.PartiallyLoadingPages("/pages/loading.html", "#container");
-            setTimeout(function () {
-                SharpIce.Pages.PartiallyLoadingPages("/pages/" + Pages + ".html", "#container");
-            }, 100)
+            SharpIce.Pages.PartiallyLoadingPages("/pages/" + Pages + ".html", "#container");
         },
         PartiallyLoadingPages: function (PagesLocation, Content) {
+            $('#Loading').css('visibility', 'unset');
             $.ajax({
                 url: PagesLocation,
                 type: "get",
                 success: function (data) {
                     $(Content).html($(data));
+                    $('#Loading').css('visibility', 'hidden');
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     SharpIce.DiaLog.Error('Ajax出错' +
@@ -45,3 +34,13 @@ var SharpIce = {
         }
     }
 };
+
+window.onerror = function (message, source, lineno, colno, error) {
+    if (error != null) {
+        SharpIce.DiaLog.Error('消息：' + message +
+            '</br></br>位置：' + source +
+            '</br></br>行：' + lineno +
+            '</br></br>列：' + colno +
+            '</br></br>错误：' + error);
+    }
+}
