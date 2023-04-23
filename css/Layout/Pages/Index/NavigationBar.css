@@ -1,40 +1,34 @@
-/* Template */
-@import url('../../Template/NavigationBar.css');
-
-/* Fonts */
-@import url('../../../../fonts/Fasthand/Fasthand.css');
-
 #NavigationBar .Left {
-    display: flex;
     height: 3rem;
+    display: flex;
     align-items: center;
 }
 
 #NavigationBar .Right {
-    display: flex;
     height: 3rem;
-    margin: 0 10px 0 auto;
+    display: flex;
     align-items: center;
 }
 
 #NavigationBar .Title {
     color: white;
     font-size: 100%;
-    border-bottom: 1px solid white;
+
     margin-left: 10px;
-    font-family: Fasthand;
-    font-weight: lighter;
     user-select: none;
-    -moz-user-select: -moz-none;
+    font-weight: lighter;
+    font-family: Fasthand;
     -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    border-bottom: 1px solid white;
 }
 
 #NavigationBar .Subheading {
     color: white;
     font-size: 100%;
     margin-left: 10px;
-    font-weight: lighter;
     user-select: none;
-    -moz-user-select: -moz-none;
+    font-weight: lighter;
     -webkit-user-select: none;
+    -moz-user-select: -moz-none;
 }

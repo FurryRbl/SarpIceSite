@@ -1,42 +1,36 @@
-/* Fonts */
-@import url('../../../../fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css');
-
 #Introduce {
-    display: flex;
-    flex-direction: row;
-    height: 30rem;
     width: 50rem;
-    border-radius: 1rem;
+    display: flex;
+    height: 10rem;
     align-items: center;
     margin: 0.5rem auto;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
 #Introduce .Left {
-    display: flex;
     width: 50%;
     height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #Introduce .Left img {
-    border-radius: 50%;
+    border-radius: 100%;
     animation: HalfRotation 5s linear infinite;
 }
 
 #Introduce .Right {
-    display: flex;
     width: 50%;
-    height: 100%;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
 #Introduce .Right p {
-    text-align: center;
-    font-weight: bold;
-    font-family: ZCOOLKuaiLe;
     color: grey;
+    font-weight: bold;
+    text-align: center;
+    font-family: ZCOOLKuaiLe;
 }

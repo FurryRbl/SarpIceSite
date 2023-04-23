@@ -1,7 +1,6 @@
 vl {
     width: 1px;
     height: 70%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: auto 10px;
     background-color: white;
 }

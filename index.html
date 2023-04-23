@@ -20,9 +20,12 @@
     <link rel="stylesheet" type="text/css" href="css/AddMark.css">
     <link rel="stylesheet" type="text/css" href="css/icon.css">
     <link rel="stylesheet" type="text/css" href="css/animation.css">
-    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="lib/sweetalert2/sweetalert2.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Layout/Template/NavigationBar.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Fasthand/Fasthand.css">
+    <link rel="stylesheet" type="text/css" href="fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css">
+    <script type="text/javascript" src="lib/jquery/jquery.min.js" module></script>
+    <script type="text/javascript" src="lib/sweetalert2/sweetalert2.min.js" module></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
 
 </head>
 
@@ -35,10 +38,11 @@
                 width: 100%;
                 height: 100%;
                 display: flex;
-                position: absolute;
+                position: fixed;
                 align-items: center;
                 flex-direction: column;
                 justify-content: center;
+                z-index: 100;
             }
 
             .spinner {
@@ -113,41 +117,7 @@
 
             @keyframes TextIndentation {
                 0% {
-                    width: 32px;
-                }
-
-                25% {
-                    width: 24px;
-                }
-
-                50% {
-                    width: 16px;
-                }
-
-                75% {
-                    width: 8px;
-                }
-
-                100% {
-                    width: 0px;
-                }
-            }
-
-            @keyframes TextIndentations {
-                0% {
                     width: 100%;
-                }
-
-                25% {
-                    width: 75%;
-                }
-
-                50% {
-                    width: 50%;
-                }
-
-                75% {
-                    width: 25%;
                 }
 
                 100% {
@@ -180,7 +150,6 @@
                     type: 'get',
                     success: function (data) {
                         $('#container').html(data);
-                        console.log('所有资源加载完成，可以开始运行代码了！');
                         $('#Loading').css('visibility', 'hidden');
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
