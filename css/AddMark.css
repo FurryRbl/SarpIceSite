@@ -1,6 +1,15 @@
 vl {
-    width: 1px;
-    height: 70%;
-    margin: auto 10px;
+    min-width: 1px;
+    height: 80%;
+    position: relative;
+}
+
+vl::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
     background-color: white;
 }

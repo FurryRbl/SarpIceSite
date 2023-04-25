@@ -1,0 +1,29 @@
+#Introduce {
+    display: flex;
+    height: 20rem;
+    margin: 0.5rem auto;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+#Introduce img {
+    border-radius: 100%;
+    animation: HalfRotation 5s linear infinite;
+}
+
+#Introduce p {
+    color: dodgerblue;
+    font-weight: bold;
+    text-align: center;
+    font-family: ZCOOLKuaiLe;
+}
+
+#Introduce * {
+    margin: 0 1rem;
+}
+
+#Introduce vl {
+    animation: HeightToPercent80 2s;
+}

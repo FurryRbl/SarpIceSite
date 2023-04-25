@@ -9,27 +9,22 @@ body {
 }
 
 #container {
-  top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-#Content {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 img,
 button,
 a {
   user-select: none;
-  -moz-user-select: -moz-none;
+  text-decoration: none;
   -webkit-user-select: none;
+  -moz-user-select: -moz-none;
 }
 
 button {
-  background-color: transparent;
   border-style: none;
+  background-color: transparent;
 }

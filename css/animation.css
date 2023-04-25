@@ -3,3 +3,53 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes TextSlowlyDisappears {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes FriendshipLinksAppearAnimated {
+    0% {
+        right: -10%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes ContactAppearAnimated {
+    0% {
+        left: -10%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes NavigationBarAppearAnimated {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70rem;
+    }
+}
+
+@keyframes HeightToPercent80 {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 80%;
+    }
+}

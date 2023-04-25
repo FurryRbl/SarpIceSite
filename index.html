@@ -3,7 +3,7 @@
 
 <head>
     <title>SharpIce 个人站点</title>
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico">
     <meta charset="utf-8">
     <meta name="application-name" content="SharpIce 个人站点" />
     <meta name="msapplication-tooltip" content="SharpIce 个人站点" />
@@ -11,126 +11,76 @@
     <meta name="keywords" content="SharpIce,锐冰龙,Furry" />
     <meta name="copyright" content="SharpIce©MIT">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="dns-prefetch" href="https://cdn.staticfile.org/">
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="lib/normalize/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/MalihuCstomScrollbarPlugin/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" type="text/css" href="lib/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Layout/Pages/Index/Loading.css">
+    <link rel="stylesheet" type="text/css" href="css/Layout/Pages/Index/Contact.css">
+    <link rel="stylesheet" type="text/css" href="css/Layout/Pages/Index/FriendshipLinks.css">
+    <link rel="stylesheet" type="text/css" href="css/Layout/Pages/Index/NavigationBar.css">
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/AddMark.css">
     <link rel="stylesheet" type="text/css" href="css/icon.css">
     <link rel="stylesheet" type="text/css" href="css/animation.css">
-    <link rel="stylesheet" type="text/css" href="css/Layout/Template/NavigationBar.css">
     <link rel="stylesheet" type="text/css" href="fonts/Fasthand/Fasthand.css">
     <link rel="stylesheet" type="text/css" href="fonts/ZCOOL_KuaiLe/ZCOOL_KuaiLe.css">
     <script type="text/javascript" src="lib/jquery/jquery.min.js" module></script>
+    <script type="text/javascript" src="lib/MalihuCstomScrollbarPlugin/jquery.mCustomScrollbar.concat.min.js"
+        module></script>
     <script type="text/javascript" src="lib/sweetalert2/sweetalert2.min.js" module></script>
+    <script type="text/javascript" src="js/SharpIce.js" defer></script>
     <script type="text/javascript" src="js/script.js" defer></script>
-
 </head>
 
 <body>
+    <header>
+        <div id="NavigationBar">
+            <p class="Title">SharpIce</p>
+            <p class="Subheading">SharpIce 个人站点</p>
+            <nav>
+                <button onclick="SharpIce.Pages.PartiallyLoadingPagesContainer('home');">主站</button>
+                <button onclick="SharpIce.Pages.PartiallyLoadingPagesContainer('license');">许可</button>
+            </nav>
+        </div>
+        <aside id="Contact">
+            <h1>联系</h1>
+            <a href="https://space.bilibili.com/513364639" title="BiliBili">
+                <i class="icon-bilibili"></i>
+            </a>
+            <a href="https://github.com/FurryRbl" title="Github">
+                <i class="icon-github" style="background-color: white;"></i>
+            </a>
+            <a href="https://osu.ppy.sh/users/33387074" title="osu!">
+                <i class="icon-osu"></i>
+            </a>
+        </aside>
+        <aside id="FriendshipLinks">
+            <h1>友链</h1>
+            <a href="https://www.dfql.io/">
+                <img src="images/FriendshipLinks/dfql.webp" alt="潜鳞">
+                <p>潜鳞</p>
+            </a>
+            <a href="https://blog.chiron1937.tk/">
+                <img src="images/FriendshipLinks/chiron1937.webp" alt="天蓝">
+                <p style="color: aqua">天蓝</p>
+            </a>
+            <a href="https://koto.cc/">
+                <img src="images/FriendshipLinks/koto.webp" alt="koto">
+                <p>koto</p>
+            </a>
+            <a href="https://xixi.blog/">
+                <img src="images/FriendshipLinks/xixi.webp" alt="西西" style="border-radius: unset;">
+                <p>西西</p>
+            </a>
+            <a href="https://blog.furrysp.top/">
+                <img src="images/FriendshipLinks/furrysp.webp" alt="Dragon Jay">
+                <p>Dragon Jay</p>
+            </a>
+        </aside>
+    </header>
     <div id="Loading">
-        <style type="text/css">
-            #Loading {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                position: fixed;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                z-index: 100;
-            }
-
-            .spinner {
-                width: 60px;
-                height: 60px;
-                position: relative;
-            }
-
-            .cube1,
-            .cube2 {
-                background-color: #3cefff;
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                top: 0;
-                left: 0;
-
-                -webkit-animation: cubemove 1.8s infinite ease-in-out;
-                animation: cubemove 1.8s infinite ease-in-out;
-                transform-origin: center;
-            }
-
-            .cube2 {
-                -webkit-animation-delay: -0.9s;
-                animation-delay: -0.9s;
-            }
-
-            @-webkit-keyframes cubemove {
-                25% {
-                    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-                }
-
-                50% {
-                    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-                }
-
-                75% {
-                    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-                }
-
-                100% {
-                    -webkit-transform: rotate(-360deg);
-                }
-            }
-
-            @keyframes cubemove {
-                25% {
-                    transform: translateX(42px) rotate(-90deg) scale(0.5);
-                    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-                }
-
-                50% {
-                    transform: translateX(42px) translateY(42px) rotate(-179deg);
-                    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
-                }
-
-                50.1% {
-                    transform: translateX(42px) translateY(42px) rotate(-180deg);
-                    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-                }
-
-                75% {
-                    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-                    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-                }
-
-                100% {
-                    transform: rotate(-360deg);
-                    -webkit-transform: rotate(-360deg);
-                }
-            }
-
-            @keyframes TextIndentation {
-                0% {
-                    width: 100%;
-                }
-
-                100% {
-                    width: 0%;
-                }
-            }
-
-            h1 {
-                color: aqua;
-                overflow: hidden;
-                margin-right: 4px;
-            }
-        </style>
         <div class="spinner">
             <div class="cube1"></div>
             <div class="cube2"></div>
@@ -138,28 +88,17 @@
         <div style="display: flex;">
             <h1>正在加载中</h1>
             <div style="width: 2rem;">
-                <h1 style="animation: TextIndentation 2s infinite;">...</h1>
+                <h1 style="animation: TextSlowlyDisappears 2s infinite;">...</h1>
             </div>
         </div>
     </div>
-    <div id="container">
+    <main id="container">
         <script type="text/javascript" defer>
             $(document).ready(function () {
-                $.ajax({
-                    url: '/pages/index.html',
-                    type: 'get',
-                    success: function (data) {
-                        $('#container').html(data);
-                        $('#Loading').css('visibility', 'hidden');
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        SharpIce.DiaLog.Error('Ajax出错' +
-                            '</br></br>错误信息：<pre style="text-align: left; background-color: mediumspringgreen; border-radius: 1rem; padding: 1rem;">' + JSON.stringify(jqXHR, null, 4) + '</pre>');
-                    }
-                });
+                SharpIce.Pages.PartiallyLoadingPagesContainer('home');
             });
         </script>
-    </div>
+    </main>
 </body>
 
 </html>

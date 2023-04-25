@@ -1,14 +1,18 @@
 #FriendshipLinks {
     right: 0;
+    top: 50%;
     width: 3rem;
     padding: 0 1rem;
+    position: fixed;
     border-radius: 5px;
-    position: absolute;
+    transform: translate(0, -50%);
+    animation: FriendshipLinksAppearAnimated 2s;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
 #FriendshipLinks a {
     display: flex;
+    text-align: center;
     align-items: center;
     text-decoration: none;
     flex-direction: column;
@@ -21,9 +25,9 @@
 }
 
 #FriendshipLinks p {
-    color: white; 
-    font-weight: bolder;
+    color: white;
     user-select: none;
+    font-weight: bolder;
 }
 
 #FriendshipLinks h1 {

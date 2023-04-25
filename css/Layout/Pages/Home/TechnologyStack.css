@@ -11,6 +11,7 @@
 #TechnologyStack a {
     display: flex;
     margin: 0 1rem;
+    overflow: hidden;
     align-items: center;
     text-decoration: none;
     flex-direction: column;
