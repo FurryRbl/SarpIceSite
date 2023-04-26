@@ -2,45 +2,43 @@
     width: 80rem;
     height: 50rem;
     padding: 1rem;
-    display: flex;
-    overflow-y: auto;
     border-radius: 1rem;
-    margin: 0.5rem auto;
-    flex-direction: column;
-    scroll-behavior: smooth;
+    margin-top: 1rem;
+    animation: OpacityTo100 1s;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
 #Content i {
-    margin: 1rem 0.5rem;
     width: 5rem;
     height: 5rem;
+}
+
+#Content h1 {
+    font-size: 2em;
+    
+}
+
+#Content h2 {
+    font-size: 1em;
+    
+}
+
+#Content h3 {
+    font-size: 0.5em;
+    
 }
 
 #Content * {
     color: white;
 }
 
-#Content .IconView {
+.TextIcons {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+    text-align: center;
 }
 
-#Content .icons a{
-    width: 5rem;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    flex-direction: column;
-}
-
-#Content a:hover {
-    color: deepskyblue;
-}
-
-#Content p {
-    margin: 0;
-    color: white;
-    font-weight: bold;
-    user-select: none;
+.Subcontent i, .TextIcons a {
+    margin-right: 1rem;
 }

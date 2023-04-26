@@ -4,21 +4,29 @@
 <body>
     <link rel="stylesheet" type="text/css" href="../css/Layout/Pages/license/Content.css" />
     <main id="container">
-        <article id="Content" class="CustomizeSlider" data-mcs-theme="light">
+        <article id="Content" class="CustomizeSlider">
             <h1>图标</h1>
-            <a href="https://icon-icons.com/">来自Icon-Icons</a>
-            <div>
-                <i class="icon-CSharp"></i>
-                <i class="icon-Vim"></i>
-                <i class="icon-Java"></i>
+            <div class="Subcontent">
+                <a href="https://icon-icons.com/">
+                    <h2>来自Icon-Icons</h2>
+                </a>
+                <div>
+                    <i class="icon-CSharp"></i>
+                    <i class="icon-Vim"></i>
+                    <i class="icon-Java"></i>
+                </div>
             </div>
-            <a href="https://icons8.com/">来自Icons8</a>
-            <div>
-                <i class="icon-VisualStudio"></i>
-                <i class="icon-VisualStudioCode"></i>
+            <div class="Subcontent">
+                <a href="https://icons8.com/">
+                    <h2>来自Icons8</h2>
+                </a>
+                <div>
+                    <i class="icon-VisualStudio"></i>
+                    <i class="icon-VisualStudioCode"></i>
+                </div>
             </div>
-            <p>其他</p>
-            <div class="IconView">
+            <h2>其他</h2>
+            <div class="TextIcons">
                 <a href="https://github.com/ppy/osu">
                     <i class="icon-osu"></i>
                     <p>osu!</p>
@@ -38,6 +46,47 @@
                 <a href="https://www.blender.org/about/logo/">
                     <i class="icon-Blender"></i>
                     <p>Blender</p>
+                </a>
+            </div>
+            <div class="Subcontent">
+                <a href="https://fonts.google.com/">
+                    <h1>字体</h1>
+                </a>
+                <button title="点击查看许可证"
+                    onclick="SharpIce.DiaLog.GetsFileContentToDialog('/fonts/ZCOOL_KuaiLe/OFL.txt');">
+                    <h2 style="font-family: ZCOOLKuaiLe;">ZCOOL KuaiLe</h2>
+                </button>
+                <button title="点击查看许可证" onclick="SharpIce.DiaLog.GetsFileContentToDialog('/fonts/Fasthand/OFL.txt');">
+                    <h2 style="font-family: Fasthand;">Fasthand</h2>
+                </button>
+            </div>
+            <h1>其他</h1>
+            <div class="Subcontent">
+                <h2>CSS库</h2>
+                <a href="https://github.com/necolas/normalize.css">
+                    <h3>Normalize 8.0.1</h3>
+                </a>
+                <br>
+                <h2>JavaScript库</h2>
+                <a href="https://github.com/jquery/jquery">
+                    <h3>JQuery 3.6.4</h3>
+                </a>
+                <a href="https://github.com/sweetalert2/sweetalert2">
+                    <h3>Sweetalert2 11.7.3</h3>
+                </a>
+                <a href="https://github.com/malihu/malihu-custom-scrollbar-plugin">
+                    <h3>Malihu Custom Scrollbar Plugin 3.1.5</h3>
+                </a>
+                <br>
+                <h2>参考</h2>
+                <a href="https://github.com/kobe-koto/kobe-koto.github.io">
+                    <h3>Kobe-Koto Site</h3>
+                </a>
+                <a href="https://chat.openai.com/">
+                    <h3>ChatGPT</h3>
+                </a>
+                <a href="https://cssfx.netlify.app/">
+                    <h3>CSS效果 CssFX</h3>
                 </a>
             </div>
         </article>

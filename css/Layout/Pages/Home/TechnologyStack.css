@@ -1,8 +1,8 @@
 #TechnologyStack {
     width: 40rem;
     display: flex;
-    margin: 0.5rem;
     flex-wrap: wrap;
+    margin-top: 1rem;
     text-align: center;
     border-radius: 1rem;
     border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -19,9 +19,9 @@
 
 #TechnologyStack p {
     color: white;
+    margin: 5px auto;
     font-weight: bold;
     user-select: none;
-    margin: 5px auto;
 }
 
 #TechnologyStack h1 {

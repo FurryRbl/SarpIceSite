@@ -5,6 +5,7 @@
     <title>SharpIce 个人站点</title>
     <link rel="icon" href="/favicon.ico">
     <meta charset="utf-8">
+    <base target="_blank">
     <meta name="application-name" content="SharpIce 个人站点" />
     <meta name="msapplication-tooltip" content="SharpIce 个人站点" />
     <meta name="description" content="SharpIce 的个人站点" />
@@ -34,7 +35,7 @@
     <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 
-<body>
+<body class="CustomizeSlider">
     <header>
         <div id="NavigationBar">
             <p class="Title">SharpIce</p>
@@ -44,6 +45,8 @@
                 <button onclick="SharpIce.Pages.PartiallyLoadingPagesContainer('license');">许可</button>
             </nav>
         </div>
+    </header>
+    <article>
         <aside id="Contact">
             <h1>联系</h1>
             <a href="https://space.bilibili.com/513364639" title="BiliBili">
@@ -79,7 +82,7 @@
                 <p>Dragon Jay</p>
             </a>
         </aside>
-    </header>
+    </article>
     <div id="Loading">
         <div class="spinner">
             <div class="cube1"></div>
@@ -95,7 +98,12 @@
     <main id="container">
         <script type="text/javascript" defer>
             $(document).ready(function () {
-                SharpIce.Pages.PartiallyLoadingPagesContainer('home');
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    $('#Loading').css('visibility', 'hidden');
+                    SharpIce.DiaLog.Error('<h3 style="color: red">不兼容移动设备，请使用桌面设备访问！</h3>');
+                } else {
+                    SharpIce.Pages.PartiallyLoadingPagesContainer('home');
+                }
             });
         </script>
     </main>

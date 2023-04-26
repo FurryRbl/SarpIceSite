@@ -2,11 +2,14 @@
     width: 70rem;
     height: 3rem;
     display: flex;
-    margin: 0 auto;
     overflow: hidden;
+    user-select: none;
     flex-direction: row;
     align-items: center;
     border-radius: 0.5rem;
+    margin: 1rem auto 0;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
     justify-content: space-between;
     animation: NavigationBarAppearAnimated 2s;
     border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -14,15 +17,13 @@
 
 #NavigationBar nav {
     height: 100%;
-    justify-content: right;
 }
 
 #NavigationBar button {
     height: 100%;
-    color: white;
     width: 4.5rem;
     font-size: 14px;
-    margin: 0 0.5rem;
+    margin: auto 0.5rem;
     align-items: center;
     justify-content: center;
 }
@@ -33,30 +34,30 @@
     background-color: rgba(0, 255, 255, 0.1);
 }
 
-p {
-    user-select: none;
-    -moz-user-select: -moz-none;
-    -webkit-user-select: none;
+#NavigationBar * {
+    color: white;
 }
 
 #NavigationBar .Title {
-    color: white;
     font-size: 130%;
-    margin-left: 1rem;
-    user-select: none;
-    font-weight: lighter;
+    margin-left: 0.5rem;
     font-family: Fasthand;
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
     border-bottom: 1px solid white;
 }
 
 #NavigationBar .Subheading {
-    color: white;
     font-size: 100%;
-    user-select: none;
     font-family: ZCOOLKuaiLe;
-    font-weight: lighter;
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
+}
+
+@media screen and (max-width: 70rem) {
+    #NavigationBar {
+        width: 20rem;
+        animation: none;
+        justify-content: center;
+    }
+    #NavigationBar p {
+        width: 0;
+        visibility: hidden;
+    }
 }
