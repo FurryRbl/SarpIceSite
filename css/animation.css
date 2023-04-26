@@ -16,21 +16,21 @@
 
 @keyframes FriendshipLinksAppearAnimated {
     0% {
-        right: -10%;
+        transform: translate(200%, -50%);
     }
 
     100% {
-        right: 0;
+        transform: translate(0%, -50%);
     }
 }
 
 @keyframes ContactAppearAnimated {
     0% {
-        left: -10%;
+        transform: translate(-200%, -50%);
     }
 
     100% {
-        left: 0;
+        transform: translate(0%, -50%);
     }
 }
 

@@ -24,15 +24,14 @@ var SharpIce = {
     },
     DiaLog: {
         Error: function (ErrorMessage) {
-            Swal.mixin({
-            }).fire({ // 对话框内容
+            Swal.fire({ // 对话框内容
                 icon: 'error',
                 title: '出错啦Xwx',
                 html: ErrorMessage,
                 heightAuto: false,
             });
         },
-        GetsFileContentToDialog: function (FileLocation) { // 获取文件内容并显示在对话框上
+        ShowFileContentInDialog: function (FileLocation) { // 获取文件内容并显示在对话框上
             $('#Loading').css('visibility', 'unset');
             $.ajax({
                 url: FileLocation,
