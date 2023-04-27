@@ -2,9 +2,13 @@
     width: 80rem;
     height: 50rem;
     padding: 1rem;
+    margin: 1rem auto;
+    user-select: none;
     border-radius: 1rem;
-    margin-top: 1rem;
+    -webkit-user-select: none;
+    box-shadow: 0 0 5px aqua;
     animation: OpacityTo100 1s;
+    -moz-user-select: -moz-none;
     border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
@@ -28,15 +32,24 @@
     
 }
 
+#Content h1, #Content h2, #Content h3, #Content a {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: -moz-all;
+}
+
 #Content * {
-    color: white;
+    color: mediumturquoise;
 }
 
 .TextIcons {
     display: flex;
     flex-wrap: wrap;
+    user-select: none;
     margin-right: 1rem;
     text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
 }
 
 .Subcontent i, .TextIcons a {

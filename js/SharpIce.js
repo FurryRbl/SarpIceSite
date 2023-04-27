@@ -16,7 +16,10 @@ var SharpIce = {
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     SharpIce.DiaLog.Error('Ajax出错' +
-                        '</br></br>错误信息：<pre style="text-align: left; background-color: mediumspringgreen; border-radius: 1rem; padding: 1rem;">' + JSON.stringify(jqXHR, null, 4) + '</pre>');
+                        '</br></br>错误信息：<pre style="text-align: left; background-color: mediumspringgreen; border-radius: 1rem; padding: 1rem;">' +
+                        JSON.stringify(jqXHR, null, 4) +
+                        '</pre>');
+                    $('#Loading').css('visibility', 'hidden');
                     throw null;
                 }
             });
@@ -49,7 +52,10 @@ var SharpIce = {
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     SharpIce.DiaLog.Error('Ajax出错' +
-                        '</br></br>错误信息：<pre style="text-align: left; background-color: mediumspringgreen; border-radius: 1rem; padding: 1rem;">' + JSON.stringify(jqXHR, null, 4) + '</pre>');
+                        '</br></br>错误信息：<pre style="text-align: left; background-color: mediumspringgreen; border-radius: 1rem; padding: 1rem;">' +
+                        JSON.stringify(jqXHR, null, 4) +
+                        '</pre>');
+                    $('#Loading').css('visibility', 'hidden');
                     throw null;
                 }
             });

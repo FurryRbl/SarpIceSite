@@ -6,8 +6,9 @@
     user-select: none;
     flex-direction: row;
     align-items: center;
-    border-radius: 0.5rem;
     margin: 1rem auto 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px aqua;
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
     justify-content: space-between;
@@ -35,7 +36,7 @@
 }
 
 #NavigationBar * {
-    color: white;
+    color: deepskyblue;
 }
 
 #NavigationBar .Title {

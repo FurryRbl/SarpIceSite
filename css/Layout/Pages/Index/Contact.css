@@ -4,8 +4,10 @@
     width: 3rem;
     padding: 0 1rem;
     position: fixed;
+    margin: auto 1rem;
     border-radius: 5px;
     margin-right: 0.5rem;
+    box-shadow: 0 0 5px aqua;
     transform: translate(0, -50%);
     animation: ContactAppearAnimated 2s;
     border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -30,13 +32,16 @@
         width: 2rem;
         text-align: center;
     }
+
     #Contact h1 {
         font-size: 0.75rem;
     }
+
     #Contact i {
         width: 2rem;
         height: 2rem;
     }
+
     #Contact a {
         margin: unset;
     }

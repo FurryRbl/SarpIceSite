@@ -1,11 +1,11 @@
 #Introduce {
     display: flex;
     height: 20rem;
+    width: 40rem;
     margin-top: 1rem;
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
-    border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
 #Introduce img {
